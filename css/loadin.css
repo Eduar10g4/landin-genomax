@@ -1,0 +1,23 @@
+*,
+*:after,
+*:before {
+	margin: 0;
+	padding: 0
+}
+#contenedor_carga {
+	background-color: rgb(255, 255, 255);
+	height: 100vh;
+	width: 100vw;
+	position: fixed;
+	transition: all 5s ease-in;
+	z-index: 20000
+}
+
+
+.loader{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+}

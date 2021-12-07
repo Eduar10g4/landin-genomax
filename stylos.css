@@ -1,0 +1,242 @@
+* {
+  box-sizing: border-box;
+  line-height: 1.15;
+  font-family: "Roboto", sans-serif;
+}
+
+.contenido__title,
+.contenido__title,
+.form__button {
+  font-weight: bold;
+  line-height: 1.12;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  background-color: #d67a7a;
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  padding-top: 14px;
+  margin: 20px 0px 0px 0px;
+  flex-wrap: wrap;
+  background-color: #e5e5e5;
+  padding: 20px 370px 10px 10px;
+}
+
+.contenido,
+.form {
+  flex: 1;
+  min-width: calc(320px - 40px);
+  margin: 20px;
+}
+.offer {
+  margin: 20px;
+}
+
+.contenido__title {
+  font-size: 45px;
+  color: var(--secondary-color, #2c8025);
+  text-align: center;
+}
+
+.contenido__description {
+  line-height: 1.15;
+  font-size: 14pt;
+  color: var(--secondary-color, #a58d8d);
+  text-align: center;
+}
+
+.form__input {
+  width: 100%;
+  height: 40px;
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 16px 0;
+  background: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
+  border: 1px solid rgba(173, 173, 173);
+}
+.swal-title {
+  color: #468a61;
+}
+.swal-text {
+  text-align: center;
+  color: #9e9a9a;
+}
+.title-error {
+  color: #d67a7a;
+}
+.container_image {
+  width: 660px;
+}
+.imagen_landing {
+  width: 700px;
+  height: 474px;
+  margin-left: 40px;
+}
+.form__button {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  background-color: var(--primary-color, #2c8025);
+  color: var(--secondary-color, #fafafa);
+  border: none;
+  outline: none;
+  font-weight: 200;
+  font-size: 18pt;
+}
+
+.menu {
+  background-color: #fff;
+  height: 56px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  margin-top: -22px;
+}
+.image-favicon {
+  margin: 0px 0px 0px 0px;
+  padding-left: 40px;
+  margin-top: -28px;
+}
+.favicon-image {
+  height: 36px;
+  margin-top: -15px;
+  margin-left: -3px;
+}
+p.image-favicon {
+  margin-left: -4px;
+}
+.marca {
+  color: #1ba560;
+  font-size: 18px;
+  padding: 12px;
+  margin-top: 6px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.marca:hover {
+  color: #1ba560;
+}
+
+.button-whatsapp {
+  background-color: #2c8025;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  width: fit-content;
+  border-radius: 5px;
+  padding: 30px;
+  margin: auto;
+  cursor: pointer;
+}
+a.button-whatsapp {
+  margin: 0px 40px 0px 0px;
+  padding: 10px 10px 10px 10px;
+  height: 37px;
+  text-decoration: none;
+}
+a.button-whatsapp:hover {
+  color: white;
+  text-decoration: none;
+}
+i.fab.fa-whatsapp {
+  margin-left: 5px;
+}
+.btn_menu {
+  margin-right: 30px;
+  font-size: 15px;
+  color: #2c8025;
+  cursor: pointer;
+  display: none;
+}
+ul.show {
+  top: 65px;
+}
+
+@media (max-width: 1125px) {
+  .marca {
+    font-size: 18px;
+    padding-left: 35px;
+  }
+  .menu_items li a {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .menu {
+    height: 50px;
+  }
+  .btn_menu {
+    display: inline-flex;
+  }
+  .menu_items {
+    background-color: #fff;
+    position: fixed;
+    width: 90vw;
+    height: calc(50% - 35px);
+    top: -100vh;
+    text-align: center;
+    transition: all 0.4s;
+    flex-direction: column;
+    border-radius: 10px;
+  }
+  ul.show {
+    margin-left: 24px;
+    height: 360px;
+  }
+  .menu_items li {
+    margin: 10px 0 0 0;
+    line-height: 20px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+  }
+  .menu_items li a {
+    font-size: 13px;
+    color: #09081d;
+    font-weight: bold;
+  }
+  .menu_items li a:hover {
+    color: #09081d;
+  }
+
+  .marca {
+    font-size: 15px;
+    padding-left: 35px;
+  }
+}
+footer {
+  background-color: #e5e5e5;
+  color: #468a61;
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+}
+p {
+  margin-top: -7px;
+  text-align: center;
+  width: 100%;
+}
+@media (max-width: 529px) {
+  p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 469px) {
+  p {
+    margin-top: -14px;
+  }
+}
